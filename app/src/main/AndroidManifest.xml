@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mobappdev_da_notesapp_18bsw0005">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icons8_sticky_notes"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/icons8_sticky_notes"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MobAppDev_DA_NotesApp_18bsw0005.NoActionBar"
+        >
+
+        <activity
+            android:name=".ActivityViewNote"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityHomePage"
+            android:exported="false" />
+        <activity
+            android:name=".UserSignUpActivity"
+            android:exported="false"
+            android:label="@string/title_activity_user_sign_up" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".SplashScreenActivity"
+            android:theme="@style/SplashTheme"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>
